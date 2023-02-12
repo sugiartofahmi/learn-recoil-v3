@@ -1,8 +1,12 @@
+import { Suspense } from "react";
 import ContentLayout from "../../layouts/ContentLayout";
+import ListProduct from "../../modules/Home/ListProduct";
 const Home = () => {
   return (
     <ContentLayout>
-      <h1>Home</h1>
+      <Suspense fallback={<h1>Loading...</h1>}>
+        <ListProduct />
+      </Suspense>
     </ContentLayout>
   );
 };
