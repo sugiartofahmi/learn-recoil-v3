@@ -1,6 +1,6 @@
 const ContentLayout = ({ children }) => {
   return (
-    <main className="flex flex-col w-full h-screen justify-center items-center">
+    <main className="flex flex-col w-full h-screen  items-center">
       {children}
     </main>
   );
